@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}*/
+/* HTML5 display-role reset for older browsers */
+/*article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}*/
+
+/* Setting up the Page Grid */
+
+*,
+*.before, *.after{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+.container, .grid{	/* The container and grid class boxes will
+					now sit one on top of the other so that there
+					paddings are not additive. See Say Howe - 
+					"Positioning Content" chapter. */
+	margin: 0 auto;
+	width: 960px;
+}
+.container{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.col-1-3, .col-2-3{  /* this will create a consistent 30px padding
+							between columns and the left- and right most borders */
+	padding-left: 15px;
+	padding-right: 15px;
+	display: inline-block;
+	vertical-align: top;
+}
+.col-1-3{
+	width: 33.3%;
+}
+.col-2-3{
+	width: 66.6%;
+}
+
+
+/* ClearFix */
+
+.group:before, .group:after {
+	content: "";
+	display: table;
+}
+.group:after{
+	clear:both;
+}
+.group{
+	clear: both;
+	*zoom: 1;
+}
+
+/* style.css */
+
+body{
+	background-color: #E7E6E6;
+}
+
+header, footer{
+	padding: 5px 1% 20px 1%;
+}
+
+header{
+	background-color: #E7E6E6;
+	background: url(../images/FrostCheboyganCabin.jpeg) top left no-repeat,
+		url(../images/LakeHuronKayakSunset.jpg) top center no-repeat,
+		url(../images/AuntPeggyLKHuron.jpg) top right no-repeat;
+	background-size: 33.33% auto;
+	/*background-image: url(../images/FrostCheboyganCabin.jpeg);
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: 50% auto;
+	background-image: url(../images/LakeHuronKayakSunset.jpg);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: 50% auto;*/
+}
+header h1{
+	text-align: center;
+	text-shadow: -1px 1px 4px #ffffff;
+}
+
+nav{
+	text-align: center;
+}
+
+nav a{
+	display: inline-block;
+	margin: 10px 25px;
+	padding: 12px 32px;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #000000;
+	background-color: #ffffff;
+	opacity: .5;
+}
+
+.active{
+	opacity: 1;
+	border: solid 3px #B0B0B0;
+}
+
+.palmgreen{
+	background-color: #DBE5A5;
+}
+
+.bluegrad{
+/*	float: right;
+*/	background-color: #B0B0B0;
+	background: -moz-radial-gradient(#B4C7E7 0%, #2F5597 100%);
+	background: -webkit-radial-gradient(#B4C7E7 0%, #2F5597 100%);
+	background: -o-radial-gradient(#B4C7E7 0%, #2F5597 100%);
+	background: radial-gradient(#B4C7E7 0%, #2F5597 100%);
+}
+
+.right{
+	float: right;
+}
+
+img{
+	display:block;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 2px #E7E6E6;
+}
+
+footer{
+	clear: both;
+	background-color: #B1B0CF;
+}
+
+footer h2{
+	font-size: large;
+}
+
+footer a{
+	display: inline-block;
+	margin-right: 15px;
+}
+
+/* Calendar Table */
+table.cal{
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-spacing: 0;
+	border: 1px solid #000000;
+	moz-border-radius: 0 0 10px 10px;
+	webkit-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+}
+th, tr:nth-child(even){
+	background-color: #D9A044;
+}
+tr:nth-child(odd){
+	background-color: #FFE39A;
+}
+tr:last-child{
+	moz-border-radius: 0 0 10px 10px;
+	webkit-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+}
+tr:last-child>td:first-child{
+	moz-border-radius: 0 0 0 10px;
+	webkit-border-radius: 0 0 0 10px;
+	border-radius: 0 0 0 10px;
+}
+tr:last-child>td:last-child{
+	moz-border-radius: 0 0 10px 0;
+	webkit-border-radius: 0 0 10px 0;
+	border-radius: 0 0 10px 0;
+}.cal caption{
+	text-transform: uppercase;
+	moz-border-radius: 10px 10px 0 0;
+	webkit-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+	background-color: #D9A044;
+	font-size: 150%;
+}
+.cal th, .cal td{
+	margin: 5px;
+	padding: 5px;
+}
+th{
+	text-align: center;
+}
+td{
+	height: 75px;
+	width: 75px;
+	vertical-align: top;
+}
+
+.prev-mon, .next-mon{
+	background-color: #E7E6E6;
+	font-style: italic;
+}
+
+/* Hide appointments, events and holidays until clicked on */
+td > span{
+	display: block;
+	text-align: center;
+	visibility: hidden;
+}
+td:active > span{
+	visibility: visible;
+}
+
+/* Typography */
+
+h1, h2, h3{
+	margin-bottom: 20px;
+}
+h4, h5, p{
+	margin-bottom: 15px;
+}
