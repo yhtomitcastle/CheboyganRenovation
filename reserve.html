@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Reserve dates</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link type="text/css" src= "js/chebJScript.js">
+</head>
+<body>
+	<header class = "container group">
+		<h1>Cheboygan - West US-23</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="design.html">Design</a>
+			<a href="photos.html">Photos</a>
+			<a href="calendar.html">Calendar</a>
+		</nav>		
+	</header>
+	<div class="grid group">
+		<aside class="palmgreen col-1-3">
+			<img src="images/VintageBeach.jpg" alt="Lakefront view taken in the 1970's">
+			<img src="images/GrGrandpaFrostgarden.jpeg" alt="Thomas Frost standing in garden behind his Cheboygan cabin">
+			<img src="images/GrandpaCastleGarden.jpg" alt="Original Cheboygan cabin front view">
+			<img src="images/SleepingPorch.jpg" alt="View of the back of the Cheboygan house including the sleeping porch">
+			<img src="images/GrandmaAuntKathleen.jpg" alt="Marie Castle and Kathleen Gignac in the 1970's by entrance door of Aunt Kathleen's cabin">
+		</aside>
+		<section class="right bluegrad col-2-3">
+			<h2>Reserve Dates</h2>
+			<h3>Under Construction - Not Yet Active</h3>
+			<form>
+				<fieldset>
+					<legend>Contact Information</legend>
+					<label for 'name'>Name: </label>
+					<input type='text' id='name' name='name'><br/>
+					<label for 'email'>e-Mail: </label>
+					<input type='email' id='email' name='email'><br/>
+					<label for 'phone'>Phone: </label>
+					<input type='phone' id='phone' name='phone'><br/>
+				</fieldset><br/>
+				<fieldset>
+					<legend>Reservation Dates</legend>
+					<label for 'arriveDate'>Arrival: </label>
+					<input type='date' id='arriveDate' name='arriveDate'><br/>
+					<label for 'departDate'>Departure: </label>
+					<input type='date' id='departDate' name='departDate'>
+				</fieldset><br/>
+				<fieldset>
+					<legend>Guest Information</legend>
+					<label for 'numAdult'>Number of Adults:</label>
+					<select name="number">
+						<option value="adult-one">One</option>
+						<option value="adult-two">Two</option>
+						<option value="adult-three">Three</option>
+						<option value="adult-four">Four</option>
+						<option value="adult-five">Five</option>
+						<option value="adult-six-or-more">Six or more</option>
+					</select><br/>
+					<label for 'numChild'>Number of Children (under 16 years of age):</label><br/>
+					<select name="number">
+						<option value="child-one">One</option>
+						<option value="child-two">Two</option>
+						<option value="child-three">Three</option>
+						<option value="child-four-or-more">Four or more</option>
+					</select><br/><br/>
+					<label for 'numVehicles'>Number of Vehicles: </label><br/>
+					<input type='radio' name='numVehicles' value='One' checked>One
+					<input type='radio' name='numVehicles' value='Two'>Two
+					<input type='radio' name='numVehicles' value='Three'>Three
+					<input type='radio' name='numVehicles' value='Four'>Four
+					<br/><br/>
+					<legend>Additional Guest Information - select all that apply</legend>
+						<input type="checkbox" name="dogs"> Dog(s)
+						<input type="checkbox" name="cats"> Cat(s)<br/>
+						<input type="checkbox" name="trailer"> Vehicle Trailer
+						<input type="checkbox" name="boat"> Boat<br/>
+						<input type="checkbox" name="jetski"> Jet Ski
+						<input type="checkbox" name="snowmobile"> Snowmobile
+				</fieldset><br/><br/>
+				<input type='submit' value= 'Verify'><br/>
+			</form>
+		</section>
+	</div>
+	<footer class="container">
+		<h2>Contractors and Suppliers Listing</h2>
+		<a href="https://www.kpneuman.com/">K.P. Neuman & Sons</a>
+		<a href="http://www.wernerplumbing.com/services/kitchen-bath.php">Werner Plumbing & Heating</a>
+		<a href="http://mousercabinetry.com/">Mouser Cabinetry</a>
+		<a href="https://www.somersetfloors.com/">Somerset Hardwood Flooring</a>
+	</footer>
+
+</body>
+</html>
