@@ -1,0 +1,189 @@
+<!-- Version 4 added features: 
+1. Footer weather app
+2. Footer Google map of Cheboygan
+3. Update design and photos webpage layout
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/map.js"></script>
+
+    <title>Cheboygan - West US-23</title>
+
+</head>
+
+
+<!-- *** Web page content *** -->
+
+<body class="site">
+
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Casa La Palo Verde</a>
+            <!-- Toggle/collapsible hamburger button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="design.html" class="nav-link">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="progress.html" class="nav-link">Progress</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Calendar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="site-content">
+        <div class="container-fluid below-nav">      
+            <h1>Cheboygan - West US-23</h1>           
+        </div>
+
+        <!-- Archive photo carousel -->
+        <div id="archives" class="carousel slide" data-ride="carousel">
+            <!-- The indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#archives" data-slide-to="0" class="active"></li>
+                <li data-target="#archives" data-slide-to="1"></li>
+                <li data-target="#archives" data-slide-to="2"></li>
+                <li data-target="#archives" data-slide-to="3"></li>
+                <li data-target="#archives" data-slide-to="4"></li>
+                <li data-target="#archives" data-slide-to="5"></li>
+                <li data-target="#archives" data-slide-to="6"></li>
+                <li data-target="#archives" data-slide-to="7"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/hCarFrostCheboyganCabin.jpeg" alt="Original Frost cabin">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hCarLakeHuronKayakSunset.jpg" alt="Kayaks on Lake Huron at sunset">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hCarAuntPeggyLKHuron.jpg" alt="Aunt Peggy on paddleboard">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hCarVintageBeach.jpg" alt="Lakefront view taken in the 1970's">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hCarGrGrandpaFrostgarden.jpeg" alt="Thomas Frost standing in garden behind his Cheboygan cabin">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hCarGrandpaCastleGarden.jpg" alt="Robert Castle standing in garden behind Cheboygan house">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hCarSleepingPorch.jpg" alt="View of the back of the Cheboygan house including the sleeping porch">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hCarGrandmaAuntKathleen.jpg" alt="Marie Castle and Kathleen Gignac by entrance door of Aunt Kathleen's cabin">
+                </div>
+            </div>
+            <!-- The left and right controls -->
+            <a class="carousel-control-prev" href="#archives" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#archives" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <!-- Three columns of text content with responsive design -->
+        <div class="container-fluid">
+            <div class="row">
+                <section class="introduction col-md-4">
+                    <h2>Introduction</h2>
+                    <h3>History</h3>
+                        <p>The Castle family has owned the Cheboygan home along the shores of the Straits of Mackinac since the late 1940's when, shortly after World War II, Thomas Frost bought the double lot located between Cheboygan and Mackinaw City. The lot and the house have changed hands but always remained in the family.</p>
+                    <h3>Future</h3>
+                        <p>In 2020, Gerry Castle's surviving siblings decided to invest funds from his estate into re-modeling the Cheboygan house. After purchasing the house and property from his parent's estate, Gerry had expressed his plans, on several occasions, to fix up the Cheboygan house and make it a place to where our extended family could return. In honor of his wishes and in memory of Gerry and other family members who are no longer with us, the house will be renovated for the enjoyment of future generations.</p>
+                </section>
+                <section class="project-vision col-md-4">
+                    <h2>House Re-model Vision</h2>
+                    <h3>Re-model Project Scope</h3>
+                        <p>The scope of the project is to re-model every room in the house - only the garage and attic will be left undisturbed. Additionally, a large deck will be extended off the front of the house facing Lake Huron. New plantings will be landscaped around the house, and saplings will be planted throughout the property replacing the many trees that have fallen over the last decade.</p>
+                    <h3>Re-model Goals and Principles</h3>
+                        <p>Home improvements will be undertaken with a goal of simplifying and extending the maintainability of the home. A guiding principle of the renovations is to retain the house and property's charm and comfort so that it would be recognizable to previous vistors and occupants. However, the house is a living space and not a museum. Future projects will make the house more attractive and comfortable as a vacation getaway for our next generations.</p>
+                </section>
+                <section class="project-overview col-md-4 right-scroll">
+                    <h2>House Remodel Overview</h2>
+                    <h3>Multi-phased Project</h3>
+                        <p> Renovation and re-modeling work will be broken into distinct phases spanning multiple years. Construction will bein in the late fall and complete by early spring, so that the entire house is available for use and enjoyment during the late-spring, summer, and peak-fall color seasons. Beginning in the fall of 2022, re-modeling projects will be structured so that the house can take visitors during winter weekends while construction is isolated to specific rooms, and any power and water outages can be scheduled during the week.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- 1. Add a map to the website footer.
+        Google Maps url: https://goo.gl/maps/owYUpAQ24QbDR4hV6 -->
+
+    <!-- 2. Add a weather widget to to the website footer. Need to research weather provider.
+
+    <a class="weatherwidget-io" href="https://forecast7.com/en/45d65n84d47/cheboygan/?unit=us" data-label_1="CHEBOYGAN" data-label_2="WEATHER" data-days="3" data-theme="pure" >CHEBOYGAN WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script> 
+    
+    -->
+
+    <footer class="container-fluid <!-- navbar navbar-default navbar-fixed-bottom -->">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Cheboygan Map</h3>
+                <div id="map"></div>
+            </div>
+            <div class="col-md-6">
+                <h2>Contractors and Suppliers Listing</h2>
+                <a href="https://www.kpneuman.com/">K.P. Neuman & Sons</a>
+                <a href="http://www.wernerplumbing.com/services/kitchen-bath.php">Werner Plumbing & Heating</a>
+                <a href="http://mousercabinetry.com/">Mouser Cabinetry</a>
+                <a href="https://www.somersetfloors.com/">Somerset Hardwood Flooring</a>
+            </div>
+            <div class="col-md-3">
+                <h3>Current Weather</h3>
+                <div id="weather"></div>
+            </div>
+        </div>
+
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <!-- 
+        Use this code with my API key for Cheboygan map
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async>
+        </script> --> 
+
+    </footer>
+
+</body>
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> -->
+
+
+
+</html>

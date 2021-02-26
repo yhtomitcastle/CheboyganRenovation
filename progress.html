@@ -1,0 +1,345 @@
+<!-- Version 4 added features: 
+1. Footer weather app
+2. Footer Google map of Cheboygan
+3. Update design and photos webpage layout
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/map.js"></script>
+
+    <title>Cheboygan - West US-23</title>
+
+</head>
+
+
+<!-- *** Web page content *** -->
+
+<body class="site">
+
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Casa La Palo Verde</a>
+            <!-- Toggle/collapsible hamburger button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="design.html" class="nav-link">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="progress.html" class="nav-link active">Progress</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Calendar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="site-content">
+        <div class="container-fluid below-nav">      
+            <h1>Cheboygan - West US-23</h1>           
+        </div>
+
+        <!-- Archive photo carousel -->
+        <div id="archives" class="carousel slide" data-ride="carousel">
+            <!-- The indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#archives" data-slide-to="0" class="active"></li>
+                <li data-target="#archives" data-slide-to="1"></li>
+                <li data-target="#archives" data-slide-to="2"></li>
+                <li data-target="#archives" data-slide-to="3"></li>
+                <li data-target="#archives" data-slide-to="4"></li>
+                <li data-target="#archives" data-slide-to="5"></li>
+                <li data-target="#archives" data-slide-to="6"></li>
+                <li data-target="#archives" data-slide-to="7"></li>
+                <li data-target="#archives" data-slide-to="8"></li>
+
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/pCarDanLauraDrive.jpg" alt="Dan and Laura standing in driveway">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pCarGerryMom.jpg" alt="Mom and Gerry sitting on sofa">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pCarHBirdFeeder.jpg" alt="Hummingbird at feeder outside window">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pCarKidsCouch.jpg" alt="Madeline, Sarah, and Paul reading on the couch">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pCarMarkUS23.jpg" alt="Mark standing in driveway during snowstorm">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pCarPegMomGrad.jpg" alt="Mom and Peg posing for graduation photo">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pCarSnowDoor.jpg" alt="Snow piled up and around kitchen entrance door">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pCarSpinWhl.jpg" alt="Mary Jo with Chloe and Owen at the spinning wheel">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pCarWoodStove.jpg" alt="Dan, Tim, Peg and Brandy by living room wood stove">
+                </div>
+            </div>
+            <!-- The left and right controls -->
+            <a class="carousel-control-prev" href="#archives" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#archives" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <section class="exterior-photos">
+            <div class="container-fluid">
+                <h2>Exterior</h2>
+                <p>Although structural improvements are being made on the older part of the house, one should not assume that the original construction and subsequent renovations were somehow inferior in craftsmanship or poorly designed. It is important to recognize that the Cheboygan house was built and subsequently renovated for different uses, under different circumstances, and with limited resources over a period of time that saw large and rapid advancements in technology and infrastructure.</p>
+                <p>When Great-great Grandpa Frost originally built the house, access to Northern Michigan for winter vacation visitors was very limited. At the time of the cabin's original construction, I-75 and the US interstate highway system did not exist. And so, the cabin was only built for use from late spring, summer, and early fall use.</p>
+                <p>Grandpa and Grandma Castle built additions and made renovations that transformed the cabin into a four-season home. They made these improvements while occupying the house. This greatly complicated the timing, scale, and cost of the construction that could be reasonably managed while maintaining a livable space.</p>
+                <div class="card-group">
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progExteriorFall.jpg" alt="North exterior - autumn">
+                        <div class="card-body">
+                            <h3>North exterior of house in Autumn</h3>
+                            <p>A new doorwall and window combination has been installed in the kitchen that will open the indoors to the outdoors. The new, combination kitchen window is similar in layout to the three-section picture window on the original cabin's front wall that looked out and onto Lake Huron and Bois Blanc Island. The new windows will allow plenty of Northern summer light to enter the kitchen along with fresh breezes and sounds from the Straits of Mackinac.</p>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progExteriorWinter.jpg" alt="North exterior - winter">
+                        <div class="card-body">
+                            <h3>North exterior of house in Winter</h3>
+                            <p>This photo was taken on January 7, 2021. It was a very sunny day, and as I walked through the kitchen and dining room, the increased natural light that came into the rooms was noticeable. There was 1-2 inches of snow on the ground with patches of grass here and there. The amount of snow on the ground is significantly less than what Grandpa and Grandma Castle experienced in the years after they relocated from Detroit to Cheboygan in 1981.</p>
+                        </div>
+                    </div>
+                </div> <!-- end of card group #1 -->
+            </div> <!-- end of "exterior-photos" section container -->
+        </section> <!-- end of "exterior-photos" section -->
+
+
+        <section class="kitchen-photos">
+            <div class="container-fluid">
+                <h2>Kitchen</h2>
+                <p>Despite the many measures that Grandma and Grandpa Castle took to insulate the house from the cold Northern winters, they could not have predicted recent climate trends of less snow and more extreme temperature fluctuations in the Cheboygan area that have made the house more susceptible to pipe-freezing and damage.</p>
+                <p>Although Great-great Grandpa's Frost's original cabin was built for limited, warm weather use, this year's renovations will return the house to being a true year-round living space. The plumbing will be better protected through a combination of re-routing lines into interior walls and building new framewalls with blown-in insulation.</p>
+                <p>In addition to further winterizing the house, this year's renovations will  open up an airy space that connects the kitchen, dining and living rooms.</p>
+                <div class="card-group">
+                   <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progKitchDoorwallStud.jpg" alt="New doorwall inside wall stripped to stud frame">
+                        <div class="card-body">
+                            <h3>New entry doorwall</h3>
+                            <p>In addition to the the new doorwall and combination window, a new framewall was constructed in the kitchen interior. The original house wall can be seen behind the framewall - it is constructed of upright pine timbers. It served as both the exterior siding and as the frame of the house on which the interior pine v-groove paneling was fastened. Originally, house wires to outlets and switches were exposed on the cabin walls prior to the remodels and renovations that were undertaken in the 1970's and 80's. The new 2x4" framewall in the kitchen has been built alongside the original house wall timbers. This new framewall provides a larger, structured space to run plumbing and electrical inside the wall as well as to spray foam insulation.</p>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progIntBathKitchTrench.jpg" alt="Trench between bathroom and kitchen">
+                        <div class="card-body">
+                            <h3>Plumbing trench</h3>
+                            <p>A jackhammer has been used to remove the bathroom slab floor and to make a trench between the kitchen and the bathroom. New plumbing will be routed beneath the replaced slab with drain lines laid with sufficient pitch to the house septic line.</p>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progIntDinKitch1.jpg" alt="painted drywall in kitchen">
+                        <div class="card-body">
+                            <h3>Drywalled and painted kitchen</h3>
+                            <p>Having been drywalled and painted, the kitchen is ready to receive cabinets, flooring and trim. Foam insulation has been blown in behind the walls. Plumbing has been laid in the trench and covered in concrete. A layer of leveler will be appplied to the slab and allowed to cure prior to the installation of the flooring. Between the slab and the finished flooring planks, a vapor barrier and pad will be laid. The flooring "snaps" together and will float on top of the slab and padding. The padding provides insulation and also dampens the sound of footsteps on the hard flooring.</p>
+                        </div>
+                    </div> 
+                </div> <!-- end of card group #1 - 3 columns best for responsive layout -->
+                <div class="card-group">
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progKitchCabSWallInstall.jpg" alt="Cabinets on kitchen south (appliance) wall">
+                        <div class="card-body">
+                            <h3>Appliance wall cabinets</h3>
+                            <p>Cabinets arrived for installation on February 4. You may notice that the partial wall between the dining room and kitchen has been removed. In its place is a knotty alder trim box to contain the fridge. The appliances will go in their approximate, previous locations. However, with the old entry door in the corner removed, counter space around the appliances has been extended from the refrigerator to the doorwall side of the room.</p>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progKitchCabNWallInstall.jpg" alt="Cabinets on kitchen north (sink) wall">
+                        <div class="card-body">
+                            <h3>Sink wall cabinets</h3>
+                            <p>Solid wood Mouser cabinets were selected for the kitchen. The frame is constructed of plywood, with knotty alder exteriors in natural stain. Due to warm weather humidity, plywood cabinetry is preferred over cabinets constructed with MDF or particle board. The appearance of these alder cabinets will deepen into a richer and more amber hue as they age over the years.</p>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progKitCabFloorInstalled.jpg" alt="Cabinets with new flooring in kitchen">
+                        <div class="card-body">
+                            <h3>Kitchen floor and trim</h3>
+                            <p>In this photo, you can see how the alder cabinetry and trim and the white oak flooring have come together to create a very warm space in the kitchen. The flooring is an engineered wood plank with a white oak veneer. It is manufactured in Kentucky from Appalachian oak. 
+                            <p>The flooring will require some attention and care because it is a natural wood product, but it shouldn't be fussy or overhelming. This is a more sustainable choice than some of the vinyl-based flooring products that are currently popular. This same flooring will be extended into the dining room and living room in the 2021/2022 fall-winter phase.</p>
+                        </div>
+                    </div>
+                </div> <!-- end of card group #2 - 3 columns best for responsive layout -->
+            </div> <!-- end of "kitchen-photos" section container -->
+        </section> <!-- end of "kitchen-photos" section -->
+
+        <section class="interior-photos">
+            <div class="container-fluid">
+                <h2>Interior</h2>
+                <p>In addition to the major renovations being undertaken in the kitchen and front bathroom, the dining room will also be modestly refreshened in this year's project. The wainscotting and existing drywall has been removed and replaced with new drywall. The original v-groove, pine paneling was uncovered. In the kitchen, all of the original paneling was found to be scarred and cracked and generally unusable. However, in the dining room, a fair amount of the pine paneling was in good condition. It is hoped that this material can be re-incorporated into future phases. There won't be a sufficient amount to panel a room or a wall, but it could possibly see use as trim or shelving.</p>
+                <p>Other interior improvements were made with an eye to the future. Plumbing was replaced and re-routed to lessen cold-weather exposure and potential freezing and pipe bursts. Electrical circuits were wired to a new subpanel in the utility room. An array of recessed can lights will extend across the dining room and kitchen ceiling.</p>
+                <p>The dining room carpet has not yet been replaced. In the 2021-2022 project, the living room floor will get an added subfloor layer so that the living room and dining room are at a matching continuous level. At that time, a new floor will be laid in the dining and living room. When the kitchen flooring material was procured this past November, an additional amount to cover the square footage in the living and dining rooms was also acquired. This was done in order to ensure a match between the three rooms, to guarantee availability of product, and to lock in on a lower line-foot rate while material costs are sharply rising during the pandemic. The planks are currently being held in storage with Petoskey Flooring.</p>
+                <div class="card-group">
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progIntDinKitch2.jpg" alt="Drywalled and painted dining room">
+                        <div class="card-body">
+                            <h3>Painted dining room</h3>
+                            <p>The jackhammered trench between the kitchen and the bathroom is now filled with concrete. New plumbing is routed beneath the replaced slab with drain lines laid with sufficient pitch to the house septic line.</p>
+                            <p>The new plumbing replaces hot and cold feed lines that were previously routed along the exterior walls of the house and were susceptible to winter freezing. In recent years, the lack of snow exposed the house to "Artic Clippers" where frigid temperatures combined with strong winds. This combination penetrated its way through house crevices and froze plumbing. The new buried lines will be much better protected.</p>
+                            <p>An added benefit of the new plumbing connection between the kitchen drain and the house septic system, is that a disposal can be installed. Disposal of food scraps in the kitchen sink will create a healthier and more efficient microbial environment in the house septic system.</p>                 
+                            <p>Between the bathroom and the well room in the garage, plex tube plumbing has been routed through interior walls.</p>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progIntBathEntry.jpg" alt="Drywalled and painted entrance into bathroom">
+                        <div class="card-body">
+                            <h3>Bathroom and bedroom entrance</h3>
+                            <p>The pocket door entrance into the bathroom has been drywalled and painted. The finish trimming can be seen in another photo on this page. The bathroom entrance has been shifted to the right in order to fit a 28" door. The sliding door will be a simple, Shaker styled, 2-panel door. As rooms are finished in the coming years, the existing slab doors will be replaced with similarly styled, 2-panel doors.</p>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progIntBreakerPanel.jpg" alt="New breaker panel in utility room">
+                        <div class="card-body">
+                            <h3>Utility room electrical sub-panel</h3>
+                            <p>A new electrical sub-panel, that connects to the main breaker panel in the "baby's" bedroom, has been installed in the utility room. As rooms are renovated, their electrical circuits will be routed to the utility room panel. Eventually, the breaker panel in the "baby's" bedroom will no longer be required and can be removed.</p>
+                            <p>Moving to a new electrical panel serves three purposes. First, it moves the breaker panel out of a living space and the room gains some wall space. Second, the newer panel is modernized to higher amperage service. Third, this co-locates the plumbing and electrical service in the garage, wellroom and utility room. In the future, when technological advancements make it feasible and affordable, we can consider solar paneling connected to battery banks in the colocated service area.</p>
+                        </div>
+                </div> <!-- end of card group #1 -->
+            </div> <!-- end of "interior-photos" section container -->
+        </section> <!-- end of "interior-photos" section -->
+
+        <section class="bath-photos">
+            <div class="container-fluid">
+                <h2>Bath</h2>
+                <p>The front bathroom sits on the cement slab of the original cabin. Great-great Grandpa Frost's cabin consisted of five rooms and a sleeping porch. The five rooms were the kitchen, two bedrooms, one bathroom, and the dining room.</p>
+                <p>Originally, there was an exterior window in the bathroom. A large claw-footed, cast iron tub used to sit by the window. The tub access was not very friendly for young children or older adults. The tub was removed and the window was covered up when the bathroom received its first remodeling in the 1970's. The frame for the window opening can be seen in the photos.</p>
+                <p>The original window will remain covered and the free-standing tub will not return. The sink, toilet, and tub placement will not substantively change from the previous placement configuration. However, the tub and vanity will be replaced. The new tub is cast iron with easy step-in for young and old alike, and the surrounding tilework will have a simple, classic black and white scheme.</p>
+                <div class="card-group">
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progBathDemo.jpg" alt="Bathroom demolition to stud walls">
+                        <div class="card-body">
+                            <h3>Bathroom wall demolition</h3>
+                            <p>This is a photo of the front bathroom demolition. This photo shows that the bathroom interior wall to the hallway has been removed. It will be replaced with a new wall with a pocket door. The bathroom door opening will be re-positioned so that a 28" solid-core, sliding door can be installed. The sliding door will create more room around the bath and allow privacy.</p>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progBathSlabRemoval.jpg" alt="Bathroom slab floor removal">
+                        <div class="card-body">
+                            <h3>Bathroom slab floor removal</h3>
+                            <p>Similar to the kitchen the front bathroom was stripped down to the exterior walls. The original exterior walls are the upright timbers behind the new 2x4" frame walls. The cement slab was also removed to allow new interior drainlines to be installed between the kitchen and the bathroom and the house septic line.</p>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progBathDrywall.jpg" alt="Bathroom hung drywall">
+                        <div class="card-body">
+                            <h3>Bathroom drywall hung</h3>
+                            <p>This closeup photo of the bathroom interior shows the tub stall and, to the right, the adjacent cubby after it was drywalled. The cubby is adjacent to the vanity as well as the tub. It will hold shelves that match the vanity and can be used by visitors to hold their toiletries.</p>
+                            <p>In the top left of the photo, a soffit extends above the shower head and along this interior wall. It contains the hot and cold water plumbing. All water feeds within the bathroom, as well as between the pump/furnace room and the bathroom, has been re-routed. Where possible, plex tube plumbing was fed through interior walls. Where plumbing could not be fed inside the wall 2x4" framing, soffits were built to hold the plex tubing. Moving the plumbing away from exterior walls will prevent pipes from freezing during cold weather so that the house may remain open during winter.</p>
+                        </div>
+                    </div>
+                </div> <!-- end of card group #1 - 3 columns best for responsive layout -->
+                <div class="card-group">
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progBathFloorInstall.jpg" alt="Bathroom floor with herringbone tile pattern">
+                        <div class="card-body">
+                            <h3>Bathroom floor basket weave tiles</h3>
+                            <p>The black and white bathroom tile floor uses a vintage basket weave tile pattern. This smaller, tighter pattern masks imperfections in areas of older construction where walls bow or don't meet at perfect 90-degree angles.</p>
+                            <p>The herringbone geometric pattern in high-contrast, black and white color tricks the eye, so that to the casual observer, the border lines between tile pieces appear to  bend. However, this is an optical illusion - upon closer inspection, it becomes more apparent that all tile lines are straight and meet at 90-degree angles.</p>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progBathTileGrout.jpg" alt="Bathtub tile grouting">
+                        <div class="card-body">
+                            <h3>Grouting the bathtub stall tiles</h3>
+                            <p>The bathroom floors and bathtub stall tiles were placed and grouted in January. This photo shows the installer applying a coat of grout to the wall tiles in the bathtub stall. In this photo, the grout glaze will eventually be wiped and buffed away from the tiles to reveal a smooth and clear surface.</p>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <img class="card-img-top" src="images/progBathTileVanity.jpg" alt="Bathroom entrance revealing tilework and new vanity">
+                        <div class="card-body">
+                            <h3>Bathroom entrance</h3>
+                            <p>This photo from Feb. 21 peeks into the nearly completed bathroom. The new freestanding vanity without its top can be seen in the lower right corner. The finished cubby shelves are adjacent to it. The completed tiling and painted walls are also visible.</p>
+                            
+                        </div>
+                    </div>
+                </div> <!-- end of card group #2 - 3 columns best for responsive layout -->
+            </div> <!-- end of "bath-photos" section container -->
+        </section> <!-- end of "bath-photos" section -->
+
+    </main>
+
+    <!-- 1. Add a map to the website footer.
+        Google Maps url: https://goo.gl/maps/owYUpAQ24QbDR4hV6 -->
+
+    <!-- 2. Add a weather widget to to the website footer. Need to research weather provider.
+
+    <a class="weatherwidget-io" href="https://forecast7.com/en/45d65n84d47/cheboygan/?unit=us" data-label_1="CHEBOYGAN" data-label_2="WEATHER" data-days="3" data-theme="pure" >CHEBOYGAN WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script> 
+    
+    -->
+
+    <footer class="container-fluid <!-- navbar navbar-default navbar-fixed-bottom -->">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Cheboygan Map</h3>
+                <div id="map"></div>
+            </div>
+            <div class="col-md-6">
+                <h2>Contractors and Suppliers Listing</h2>
+                <a href="https://www.kpneuman.com/">K.P. Neuman & Sons</a>
+                <a href="http://www.wernerplumbing.com/services/kitchen-bath.php">Werner Plumbing & Heating</a>
+                <a href="http://mousercabinetry.com/">Mouser Cabinetry</a>
+                <a href="https://www.somersetfloors.com/">Somerset Hardwood Flooring</a>
+            </div>
+            <div class="col-md-3">
+                <h3>Current Weather</h3>
+                <div id="weather"></div>
+            </div>
+        </div>
+
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <!-- 
+        Use this code with my API key for Cheboygan map
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async>
+        </script> --> 
+
+    </footer>
+
+</body>
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> -->
+
+
+
+</html>
