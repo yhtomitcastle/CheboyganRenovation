@@ -1,0 +1,82 @@
+/* ---- Adjust top of page content to fit below navigation bar ---- */
+.below-nav h1 {
+	margin-top: 80px;
+}
+
+
+
+/* ---- Sticky footer of unknown size: 
+		this is necessary with responsive design because footer
+		could become taller when viewed on a small or medium device.
+		See also:
+		https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+		---- */
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
+
+
+/* ---- Photo carousel display adjustments ---- */
+
+/* !!! Future webpage version upgrade:
+Carousel upgrade to create a responsive Bootstrap 4 Carousel with Multiple Items 
+This will allow 2-3 photos side by side with responsive design based on
+the viewport width and height 
+*/
+
+.carousel-inner img {
+	height: 50vh;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231a1a1a' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231a1a1a' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* ---- Text column scrolls ---- 
+		Future enhancement - TBD.
+		Look at manin-v1 for first unsuccessful attempt. 
+*/
+
+/* ---- Design page images ---- */
+img.design, img.progress {
+	width: 100%;
+	height: auto;
+}
+
+
+/* ---- Footer positioning adjustments ---- */
+footer{
+	padding: 20px 0 30px 0;
+}
+
+footer a{
+	display: inline-block;
+	margin-right: 15px;
+}
+
+/* ---- Google map in footer ---- */
+/* Set the size of the div element that contains the map */
+#map, #weather {
+  	height: 25vh;
+  	background-color: gray;
+  	/* The height is 400 pixels */
+  	/*width: 100%;*/
+  	/* The width is the width of the web page */
+}
+
+
