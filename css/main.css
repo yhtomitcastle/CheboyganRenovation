@@ -26,30 +26,64 @@
 
 /* ---- Photo carousel display adjustments ---- */
 
-/* !!! Future webpage version upgrade:
-Carousel upgrade to create a responsive Bootstrap 4 Carousel with Multiple Items 
-This will allow 2-3 photos side by side with responsive design based on
-the viewport width and height 
+/* !!! Version 4 upgrade:
+Carousel upgrade to create a responsive Bootstrap 4 Carousel with Multiple Items. 
+This will allow 1, 2, 3, or 6 photos side by side with responsive design based on
+the viewport width. 
 */
 
-.carousel-inner img {
-	height: 50vh;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+.carousel-indicators li {
+    background-color: black;
 }
 
+.carousel-inner {
+	height: 70vh;
+}
+
+@media screen and (min-width: 576px) {
+	.carousel-inner {
+		height: 55vh;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.carousel-inner {
+		height: 45vh;
+	}
+}
+
+@media screen and (min-width: 991px) {
+	.carousel-inner {
+		height: 30vh;
+	}
+}
+
+/* For future development: center photos vertically in carousel script
+	will most likely require modifying carousel.css rather than main.css.
+	The below code vertically centers the images, but it scrubs the margins
+	and results in "ugly" scroll transform.
+
+	.carousel-inner img {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}*/
+
+
 .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231a1a1a' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231a1a1a' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");*/
 }
 
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231a1a1a' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231a1a1a' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");*/
 }
+
 
 /* ---- Text column scrolls ---- 
 		Future enhancement - TBD.
-		Look at manin-v1 for first unsuccessful attempt. 
+		Look at main-v1 for first unsuccessful attempt. 
 */
 
 /* ---- Design page images ---- */
