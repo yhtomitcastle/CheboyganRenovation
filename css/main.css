@@ -1,6 +1,11 @@
+/* ---- Navbar adjustments ---- */
 /* ---- Adjust top of page content to fit below navigation bar ---- */
 .below-nav h1 {
 	margin-top: 80px;
+}
+.navbar-brand{
+	font-family: "Arizonia";
+	font-size: 1.6em;
 }
 
 

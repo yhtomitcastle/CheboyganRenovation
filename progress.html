@@ -1,7 +1,7 @@
-<!-- Version 5 added features: 
+<!-- Version 6 added features: 
 1. Footer weather app
 2. Footer Google map of Cheboygan
-3. Responsive multi-item carousel
+3. Responsive lightbox for "progress" page card images
 -->
 
 <!doctype html>
@@ -14,11 +14,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arizonia">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-
-<!--     <script src="js/map.js"></script> -->
 
     <title>Cheboygan - West US-23</title>
 
@@ -147,7 +147,9 @@
                 <p>Grandpa and Grandma Castle built additions and made renovations that transformed the cabin into a four-season home. They made these improvements while occupying the house. This greatly complicated the timing, scale, and cost of the construction that could be reasonably managed while maintaining a livable space.</p>
                 <div class="card-group">
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progExteriorFall.jpg" alt="North exterior - autumn">
+                        <a href="images/progExteriorFall.jpg" data-lightbox="progN-Ext-lbox" data-title="Northern exterior in Autumn" data-alt="North exterior - autumn">
+                            <img class="card-img-top" src="images/progExteriorFall.jpg" data-lightbox="progN-Ext-lbox" alt="North exterior - autumn">
+                        </a>
                         <div class="card-body">
                             <h3>North exterior of house in Autumn</h3>
                             <p id="progN-ExtFall" class="collapse">A new doorwall and window combination has been installed in the kitchen that will open the indoors to the outdoors. The new, combination kitchen window is similar in layout to the three-section picture window on the original cabin's front wall that looked out and onto Lake Huron and Bois Blanc Island. The new windows will allow plenty of Northern summer light to enter the kitchen along with fresh breezes and sounds from the Straits of Mackinac.</p>
@@ -155,7 +157,9 @@
                         </div>
                     </div>
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progExteriorWinter.jpg" alt="North exterior - winter">
+                        <a href="images/progExteriorWinter.jpg" data-lightbox="progN-Ext-lbox" data-title="Northern exterior in January" data-alt="North exterior - winter">
+                            <img class="card-img-top" src="images/progExteriorWinter.jpg" alt="North exterior - winter" data-lightbox="progN-Ext-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>North exterior of house in Winter</h3>
                             <p id="progN-ExtWint" class="collapse">This photo was taken on January 7, 2021. It was a very sunny day, and as I walked through the kitchen and dining room, the increased natural light that came into the rooms was noticeable. There was 1-2 inches of snow on the ground with patches of grass here and there. The amount of snow on the ground is significantly less than what Grandpa and Grandma Castle experienced in the years after they relocated from Detroit to Cheboygan in 1981.</p>
@@ -175,7 +179,9 @@
                 <p>In addition to further winterizing the house, this year's renovations will  open up an airy space that connects the kitchen, dining and living rooms.</p>
                 <div class="card-group">
                    <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progKitchDoorwallStud.jpg" alt="New doorwall inside wall stripped to stud frame">
+                        <a href="images/progKitchDoorwallStud.jpg" data-lightbox="progKit-lbox" data-title="Andersen entry doorwall" data-alt="New doorwall inside wall stripped to stud frame">
+                            <img class="card-img-top" src="images/progKitchDoorwallStud.jpg" alt="New doorwall inside wall stripped to stud frame" data-lightbox="progKit-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>New entry doorwall</h3>
                             <p id="progKit-1" class="collapse">Along with the new doorwall and combination window, a new framewall was constructed in the kitchen interior. The original house wall can be seen behind the framewall - it is constructed of upright pine timbers. It served as both the exterior siding and as the frame of the house on which the interior pine v-groove paneling was fastened. Originally, house wires to outlets and switches were exposed on the cabin walls prior to the remodels and renovations that were undertaken in the 1970's and 80's. The new 2x4" framewall in the kitchen has been built alongside the original house wall timbers. This new framewall provides a larger, structured space to run plumbing and electrical inside the wall as well as to spray foam insulation.</p>
@@ -183,7 +189,9 @@
                         </div>
                     </div>
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progIntBathKitchTrench.jpg" alt="Trench between bathroom and kitchen">
+                        <a href="images/progIntBathKitchTrench.jpg" data-lightbox="progKit-lbox" data-title="Bathroom-kitchen trench" data-alt="Trench between bathroom and kitchen">
+                            <img class="card-img-top" src="images/progIntBathKitchTrench.jpg" alt="Trench between bathroom and kitchen" data-lightbox="progKit-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>Plumbing trench</h3>
                             <p id="progKit-2" class="collapse">A jackhammer has been used to remove the bathroom slab floor and to make a trench between the kitchen and the bathroom. New plumbing will be routed beneath the replaced slab with drain lines laid with sufficient pitch to the house septic line.</p>
@@ -191,7 +199,9 @@
                         </div>
                     </div>
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progIntDinKitch1.jpg" alt="painted drywall in kitchen">
+                        <a href="images/progIntDinKitch1.jpg" data-lightbox="progKit-lbox" data-title="Painted kitchen" data-alt="painted drywall in kitchen">
+                            <img class="card-img-top" src="images/progIntDinKitch1.jpg" alt="painted drywall in kitchen" data-lightbox="progKit-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>Drywalled and painted kitchen</h3>
                             <p id="progKit-3" class="collapse">Having been drywalled and painted, the kitchen is ready to receive cabinets, flooring and trim. Foam insulation has been blown in behind the walls. Plumbing has been laid in the trench and covered in concrete. A layer of leveler will be appplied to the slab and allowed to cure prior to the installation of the flooring. Between the slab and the finished flooring planks, a vapor barrier and pad will be laid. The flooring "snaps" together and will float on top of the slab and padding. The padding provides insulation and also dampens the sound of footsteps on the hard flooring.</p>
@@ -201,7 +211,9 @@
                 </div> <!-- end of card group #1 - 3 columns best for responsive layout -->
                 <div class="card-group">
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progKitchCabSWallInstall.jpg" alt="Cabinets on kitchen south (appliance) wall">
+                        <a href="images/progKitchCabSWallInstall.jpg" data-lightbox="progKit-lbox" data-title="Kitchen cabinets on appliance wall" data-alt="Cabinets on kitchen south (appliance) wall">
+                            <img class="card-img-top" src="images/progKitchCabSWallInstall.jpg" alt="Cabinets on kitchen south (appliance) wall" data-lightbox="progKit-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>Appliance wall cabinets</h3>
                             <p id="progKit-4" class="collapse">Cabinets arrived for installation on February 4. You may notice that the partial wall between the dining room and kitchen has been removed. In its place is a knotty alder trim box to contain the fridge. The appliances will go in their approximate, previous locations. However, with the old entry door in the corner removed, counter space around the appliances has been extended from the refrigerator to the doorwall side of the room.</p>
@@ -209,7 +221,9 @@
                         </div>
                     </div>
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progKitchCabNWallInstall.jpg" alt="Cabinets on kitchen north (sink) wall">
+                        <a href="images/progKitchCabNWallInstall.jpg" data-lightbox="progKit-lbox" data-title="Kitchen cabinets on sink wall" data-alt="Cabinets on kitchen north (sink) wall">
+                            <img class="card-img-top" src="images/progKitchCabNWallInstall.jpg" alt="Cabinets on kitchen north (sink) wall" data-lightbox="progKit-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>Sink wall cabinets</h3>
                             <p id="progKit-5" class="collapse">Solid wood Mouser cabinets were selected for the kitchen. The frame is constructed of plywood, with knotty alder exteriors in natural stain. Due to warm weather humidity, plywood cabinetry is preferred over cabinets constructed with MDF or particle board. The appearance of these alder cabinets will deepen into a richer and more amber hue as they age over the years.</p>
@@ -217,7 +231,9 @@
                         </div>
                     </div>
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progKitCabFloorInstalled.jpg" alt="Cabinets with new flooring in kitchen">
+                        <a href="images/progKitCabFloorInstalled.jpg" data-lightbox="progKit-lbox" data-title="Kitchen cabinets and new wood flooring" data-alt="Cabinets with new flooring in kitchen">
+                            <img class="card-img-top" src="images/progKitCabFloorInstalled.jpg" alt="Cabinets with new flooring in kitchen" data-lightbox="progKit-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>Kitchen floor and trim</h3>
                             <div id="progKit-6" class="collapse">
@@ -239,7 +255,9 @@
                 <p>The dining room carpet has not yet been replaced. In the 2021-2022 project, the living room floor will get an added subfloor layer so that the living room and dining room are at a matching continuous level. At that time, a new floor will be laid in the dining and living room. When the kitchen flooring material was procured this past November, an additional amount to cover the square footage in the living and dining rooms was also acquired. This was done in order to ensure a match between the three rooms, to guarantee availability of product, and to lock in on a lower line-foot rate while material costs are sharply rising during the pandemic. The planks are currently being held in storage with Petoskey Flooring.</p>
                 <div class="card-group">
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progIntDinKitch2.jpg" alt="Drywalled and painted dining room">
+                        <a href="images/progIntDinKitch2.jpg" data-lightbox="progInt-lbox" data-title="Painted dining room" data-alt="Drywalled and painted dining room">
+                            <img class="card-img-top" src="images/progIntDinKitch2.jpg" alt="Drywalled and painted dining room" data-lightbox="progInt-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>Painted dining room</h3>
                             <div id="progInt-1" class="collapse">
@@ -252,7 +270,9 @@
                         </div>
                     </div>
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progIntBathEntry.jpg" alt="Drywalled and painted entrance into bathroom">
+                        <a href="images/progIntBathEntry.jpg" data-lightbox="progInt-lbox" data-title="Painted bathroom entrance" data-alt="Drywalled and painted entrance into bathroom">
+                            <img class="card-img-top" src="images/progIntBathEntry.jpg" alt="Drywalled and painted entrance into bathroom" data-lightbox="progInt-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>Bathroom and bedroom entrance</h3>
                             <p id="progInt-2" class="collapse">The pocket door entrance into the bathroom has been drywalled and painted. The finish trimming can be seen in another photo on this page. The bathroom entrance has been shifted to the right in order to fit a 28" door. The sliding door will be a simple, Shaker styled, 2-panel door. As rooms are finished in the coming years, the existing slab doors will be replaced with similarly styled, 2-panel doors.</p>
@@ -260,7 +280,9 @@
                         </div>
                     </div>
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progIntBreakerPanel.jpg" alt="New breaker panel in utility room">
+                        <a href="images/progIntBreakerPanel.jpg" data-lightbox="progInt-lbox" data-title="Utility room breaker sub-panel" data-alt="New breaker panel in utility room">
+                            <img class="card-img-top" src="images/progIntBreakerPanel.jpg" alt="New breaker panel in utility room" data-lightbox="progInt-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>Utility room electrical sub-panel</h3>
                             <div id="progInt-3" class="collapse">
@@ -281,7 +303,9 @@
                 <p>The original window will remain covered and the free-standing tub will not return. The sink, toilet, and tub placement will not substantively change from the previous placement configuration. However, the tub and vanity will be replaced. The new tub is cast iron with easy step-in for young and old alike, and the surrounding tilework will have a simple, classic black and white scheme.</p>
                 <div class="card-group">
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progBathDemo.jpg" alt="Bathroom demolition to stud walls">
+                        <a href="images/progBathDemo.jpg" data-lightbox="progBath-lbox" data-title="Bathroom wall demolition" data-alt="Bathroom demolition to stud walls">
+                            <img class="card-img-top" src="images/progBathDemo.jpg" alt="Bathroom demolition to stud walls" data-lightbox="progBath-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>Bathroom wall demolition</h3>
                             <p id="progBath-1" class="collapse">This is a photo of the front bathroom demolition. This photo shows that the bathroom interior wall to the hallway has been removed. It will be replaced with a new wall with a pocket door. The bathroom door opening will be re-positioned so that a 28" solid-core, sliding door can be installed. The sliding door will create more room around the bath and allow privacy.</p>
@@ -289,7 +313,9 @@
                         </div>
                     </div>
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progBathSlabRemoval.jpg" alt="Bathroom slab floor removal">
+                        <a href="images/progBathSlabRemoval.jpg" data-lightbox="progBath-lbox" data-title="Bathroom floor slab demolition" data-alt="Bathroom slab floor removal">
+                            <img class="card-img-top" src="images/progBathSlabRemoval.jpg" alt="Bathroom slab floor removal" data-lightbox="progBath-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>Bathroom slab floor removal</h3>
                             <p id="progBath-2" class="collapse">Similar to the kitchen the front bathroom was stripped down to the exterior walls. The original exterior walls are the upright timbers behind the new 2x4" frame walls. The cement slab was also removed to allow new interior drainlines to be installed between the kitchen and the bathroom and the house septic line.</p>
@@ -297,7 +323,9 @@
                         </div>
                     </div>
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progBathDrywall.jpg" alt="Bathroom hung drywall">
+                        <a href="images/progBathDrywall.jpg" data-lightbox="progBath-lbox" data-title="Drywall hung in bathroom" data-alt="Bathroom hung drywall">
+                            <img class="card-img-top" src="images/progBathDrywall.jpg" alt="Bathroom hung drywall" data-lightbox="progBath-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>Bathroom drywall hung</h3>
                             <div id="progBath-3" class="collapse">
@@ -310,7 +338,9 @@
                 </div> <!-- end of card group #1 - 3 columns best for responsive layout -->
                 <div class="card-group">
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progBathFloorInstall.jpg" alt="Bathroom floor with herringbone tile pattern">
+                        <a href="images/progBathFloorInstall.jpg" data-lightbox="progBath-lbox" data-title="Basket-weave tile installed" data-alt="Bathroom floor with basket-weave tile pattern">
+                            <img class="card-img-top" src="images/progBathFloorInstall.jpg" alt="Bathroom floor with basket-weave tile pattern" data-lightbox="progBath-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>Bathroom floor basket weave tiles</h3>
                             <div id="progBath-4" class="collapse">
@@ -321,7 +351,9 @@
                         </div>
                     </div>
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progBathTileGrout.jpg" alt="Bathtub tile grouting">
+                        <a href="images/progBathTileGrout.jpg" data-lightbox="progBath-lbox" data-title="Bathtub stall tile grouting" data-alt="Bathtub tile grouting">
+                            <img class="card-img-top" src="images/progBathTileGrout.jpg" alt="Bathtub tile grouting" data-lightbox="progBath-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>Grouting the bathtub stall tiles</h3>
                             <p id="progBath-5" class="collapse">The bathroom floors and bathtub stall tiles were placed and grouted in January. This photo shows the installer applying a coat of grout to the wall tiles in the bathtub stall. In this photo, the grout glaze will eventually be wiped and buffed away from the tiles to reveal a smooth and clear surface.</p>
@@ -329,7 +361,9 @@
                         </div>
                     </div>
                     <div class="card border border-dark">
-                        <img class="card-img-top" src="images/progBathTileVanity.jpg" alt="Bathroom entrance revealing tilework and new vanity">
+                        <a href="images/progBathTileVanity.jpg" data-lightbox="progBath-lbox" data-title="Bathroom tile and new vanity" data-alt="Bathroom entrance revealing tilework and new vanity">
+                            <img class="card-img-top" src="images/progBathTileVanity.jpg" alt="Bathroom entrance revealing tilework and new vanity" data-lightbox="progBath-lbox">
+                        </a>
                         <div class="card-body">
                             <h3>Bathroom entrance</h3>
                             <p id="progBath-6" class="collapse">This photo from Feb. 21 peeks into the nearly completed bathroom. The new freestanding vanity without its top can be seen in the lower right corner. The finished cubby shelves are adjacent to it. The completed tiling and painted walls are also visible.</p>
@@ -381,19 +415,26 @@
 
     </footer>
 
-</body>
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<!-- Loading full version of jquery - minimal file size load increase
+Using Google's library - many viewers will already have this loaded -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
-<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> -->
 
 <!-- carousel.js must go at end in order to wrap carousel images -->
 <script src="js/carousel.js"></script>
+
+<!-- lightbox-plus-jquery.js must also load just before the closing </body> tag -->
+<script src="js/lightbox.js"></script>
+
+
+</body>
 
 
 </html>
