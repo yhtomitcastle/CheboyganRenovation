@@ -119,12 +119,26 @@ img.design, img.progress {
 
 .googleCalContainer{
 	border: solid 1px #777;
+	margin-bottom: 2rem;
 }
 .googleCal{
 	border: solid 1px #777;
 	width: 800px;
 	height: 600px;
 	overflow: hidden;
+}
+
+/* ---- Video adjustments ---- */
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.calVideo{
+	margin-bottom: 2rem;
+  	margin-left: auto;
+  	margin-right: auto;
+  	border:2px solid #596367;	
 }
 
 /* ---- Footer positioning adjustments ---- */
@@ -135,17 +149,36 @@ footer{
 footer a{
 	display: inline-block;
 	margin-right: 15px;
+	border:3px solid #596367;
 }
+
+footer div[class *= "col-"] {
+	margin-bottom: 1.5rem;
+}
+
+/* ---- Contractor links in footer ---- */
+
+a.list-group-item{
+	border:2px solid #596367;
+}
+
 
 /* ---- Google map in footer ---- */
 /* Set the size of the div element that contains the map */
-#map, {
-  	height: 25vh;
-  	background-color: gray;
+footer .googleMap {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	border:3px solid #596367;
+  	width: 90%;
+  	/*width: 40%;*/
   	/* The height is 400 pixels */
   	/*width: 100%;*/
   	/* The width is the width of the web page */
 }
+
+/* ---- WeatherWidget in footer ---- */
+
 .weatherwidget-io {
 	display: block;
 	margin-left: auto;
