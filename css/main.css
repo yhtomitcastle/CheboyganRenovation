@@ -21,7 +21,7 @@ h1{
 	font-weight: bold;
 	font-size: 2.8rem;
 }
-h2, h3{
+h2, h3, h4, h5, h6{
 	font-family: Perpetua;
 	font-weight: bold;
 }
@@ -46,12 +46,6 @@ h2, h3{
 
 
 /* ---- Photo carousel display adjustments ---- */
-
-/* !!! Version 4 upgrade:
-Carousel upgrade to create a responsive Bootstrap 4 Carousel with Multiple Items. 
-This will allow 1, 2, 3, or 6 photos side by side with responsive design based on
-the viewport width. 
-*/
 
 .carousel-indicators li {
     background-color: black;
