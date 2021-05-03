@@ -135,6 +135,18 @@ video {
   	border:2px solid #596367;	
 }
 
+/* ---- Google Docs Adjustments ---- */
+.googleDocsContainer{
+	border: solid 1px #777;
+	margin-bottom: 2rem;
+}
+.googleDocs{
+  	border: solid 1px #777;
+	width: 800px;
+	height: 600px;
+	overflow: hidden;
+}
+
 /* ---- Footer positioning adjustments ---- */
 footer{
 	padding: 20px 0 30px 0;
