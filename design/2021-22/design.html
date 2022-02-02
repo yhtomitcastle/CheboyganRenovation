@@ -1,0 +1,262 @@
+<!-- Version 5 added features:
+1. Footer weather app
+2. Footer Google map of Cheboygan
+3. Responsive multi-item carousel
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arizonia">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/carousel.css">
+    <link rel="stylesheet" href="../../css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+
+    <title>Cheboygan - Design</title>
+
+</head>
+
+
+<!-- *** Web page content *** -->
+
+<body class="site">
+
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Casa La Palo Verde</a>
+            <!-- Toggle/collapsible hamburger button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="../../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Design</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../2020-21/design.html"">2020-21</a>
+                            <a class="dropdown-item active" href="design.html"">2021-22</a>
+                            <!-- <a class="dropdown-item" href="#">Future</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Progress</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../../progress/2020-21/progress.html"">2020-21</a>
+                            <a class="dropdown-item" href="../../progress/2021-22/progress.html"">2021-22</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../calendar.html" class="nav-link">Calendar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="site-content">
+        <div class="container-fluid below-nav">
+            <h1>Cheboygan - West US-23</h1>
+        </div>
+
+
+        <!-- *** Multi-item, responsive photo carousel *** -->
+        <!-- ***               based on:               *** -->
+        <!--     https://codepen.io/timar/pen/mabyEg       -->
+        <!-- _____________________________________________ -->
+
+        <div class="container-fluid">
+            <div id="archives" class="carousel slide" data-ride="carousel" data-interval=7000>
+
+            <!--  ***                 The indicators               *** -->
+            <!-- Future enhancement: responsive coordinated indicators -->
+            <!-- <ul class="carousel-indicators">
+                <li data-target="#archives" data-slide-to="0" class="active"></li>
+                <li data-target="#archives" data-slide-to="1"></li>
+                <li data-target="#archives" data-slide-to="2"></li>
+                <li data-target="#archives" data-slide-to="3"></li>
+                <li data-target="#archives" data-slide-to="4"></li>
+                <li data-target="#archives" data-slide-to="5"></li>
+                <li data-target="#archives" data-slide-to="6"></li>
+                <li data-target="#archives" data-slide-to="7"></li>
+            </ul> -->
+
+
+            <!-- The slideshow -->
+
+                <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2 active">
+                        <img class="img-fluid mx-auto d-block" src="../../images/dCarWestExt.jpg" alt="West face of house exterior from Summer2020">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                        <img class="img-fluid mx-auto d-block" src="../../images/dCarNorthExt.jpg" alt="North face of house exterior from Summer2020">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                        <img class="img-fluid mx-auto d-block" src="../../images/dCarOldApplianceWall.jpg" alt="Kitchen appliance wall before remodeling">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                        <img class="img-fluid mx-auto d-block" src="../../images/dCarOldPeninsula.jpg" alt="View into kitchen through peninsula before remodeling">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                        <img class="img-fluid mx-auto d-block" src="../../images/dCarOldSinkWall.jpg" alt="Kitchen sink wall prior to remodeling">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                        <img class="img-fluid mx-auto d-block" src="../../images/dCarOldDining.jpg" alt="Dining room before remodeling">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                        <img class="img-fluid mx-auto d-block" src="../../images/dCarOldBathEnt.jpg" alt="Front bathroom entrance before remodeling">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                        <img class="img-fluid mx-auto d-block" src="../../images/dCarOldLiving.jpg" alt="View into living room before remodeling">
+                    </div>
+                </div>
+
+                <!-- The left and right controls -->
+                <a class="carousel-control-prev" href="#archives" role="button" data-slide="prev">
+                    <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next text-faded" href="#archives" role="button" data-slide="next">
+                    <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- _____________________________________________ -->
+
+        <!--             *** END - Carousel ***            -->
+
+
+
+
+        <!-- Responsive card layout to contain design descriptions -->
+        <!--                 *** Start - Cards ***                 -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- New design card #1 - 19 Jan 2022 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border border-dark">
+                        <div class="card-body">
+                            <a href="../../images/LRNorthWindowDesign.png" data-lightbox="design-lbox" data-title="North wall window design" data-alt="Living room North wall picture window design.">
+                                <img src="../../images/LRNorthWindowDesign.png" alt="Living room North wall picture window design." class="design" data-lightbox="design-lbox">
+                            </a>
+                            <h2>2021-2022 Living Room North Wall Window Design</h2>
+                            <p>Beginning in January 2022, remodeling work will resume with a focus on the living and dining rooms. The existing carpeting, paneling and suspended ceiling in the living room will be removed. The dining room carpeting will also be removed.</p>
+                            <div id="desNorthWall" class="collapse">
+                                <p> New replacement windows have been designed and ordered for all three walls in the living room. The wood flooring in the kitchen will be extended throughout the living and dining rooms. Drywall will be installed on the walls and ceiling.  Knotty alder trim will be installed throughout the lving and dining rooms.</p>
+                                <p> This drawing shows hows the two existing windows on the North living room wall that look onto the lake will be replaced with a single, larger composite window. The new window is shown in bright blue outline, and the old window locations are shown as shaded, salmon colored boxes.</p>
+                                <p> As can be seen in the design diagram, the new composite window is comprised of a large picture window flanked by two casement windows. The new window opening is taller (five feet high) and wider (ten feet wide) allowing for more expansive and uninterrupted views of the property frontage, lake and islands.</p>
+                            </div>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#desNorthWall">more / less</button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <!-- New design card #2 - 19 Jan 2022 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border border-dark">
+                        <div class="card-body">
+                            <a href="../../images/LREastWindowDesign.png" data-lightbox="design-lbox" data-title="East wall window design" data-alt="Living room East wall windows design.">
+                                <img src="../../images/LREastWindowDesign.png" alt="Living room East wall windows design." class="design" data-lightbox="design-lbox">
+                            </a>
+                            <h2>2021-2022 Living Room East Wall Window Design</h2>
+                            <p>The East wall that points towards Cheboygan will receive a facelift. This wall previously had a single 48" x 48" sliding window. This window will be replaced with a 48" x 48" casement window. A second 48" x 48" window will be added to this wall.</p>
+                            <div id="desEastWall" class="collapse">
+                                <p> The second window will bring more of the outdoors into the room. Airflow from the outdoors will be increased by replacing slider windows with casement windows. A double casement window like these, when fully opened, has twice the airflow of a slider window of the same rough opening size.</p>
+                                <p> As can be seen in this drawing, there is open wall space between the two new matching windows that can be used for wall hangings or an entertainment area. All of the new windows in this room will be trimmed in knotty alder wood like the new kitchen window, doorwall and cabinets that were installed in 2021.</p>
+                                <p>Space has been left in the corner of the rooms for lamps to provide lighting. There will also be new recessed lighting installed in the ceiling to provide general lighting. Removal of the suspended ceiling will increase the ceiling height by 2-3 inches. The additional windows, increased ceiling height, and recessed lighting will have the overall effect of making the room lighter and airier during the day and as well as at night.</p>
+                            </div>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#desEastWall">more / less</button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <!-- New design card #3 - 19 Jan 2022 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border border-dark">
+                        <div class="card-body">
+                            <a href="../../images/LRWestWindowDesign.png" data-lightbox="design-lbox" data-title="West wall window design" data-alt="Living room West wall picture window design.">
+                                <img src="../../images/LRWestWindowDesign.png" alt="Living room West wall picture window design." class="design" data-lightbox="design-lbox">
+                            </a>
+                            <h2>2021-2022 Living Room West Wall Window Design</h2>
+                            <p>Its not clear why Grandpa and Grandma Castle included an exterior door into the living room addition they built in the 1970's. They may have had future plans to wall off the kitchen door to add storage and working space, leaving the living room door for access to the side yard and beach frontage.</p>
+                            <div id="desWestWall" class="collapse">
+                                <p>However, the second building addition to the house in the mid-eighties added the master bedroom and craftroom and created two additional entrances into the house. As a result, the living room door has received little use for several years. In the new design, the door has been removed and replaced with wall space. This new wall space will be ideal for wall hangings, TV, or as a potential location for a gas or wood-burning stove someday in the future.</p>
+                                <p>With the removal of the door, a second composite picture window will be added to the room on the West wall. This window, like the North wall window, also has a large picture window flanked by two casement windows. And like the North window, it is is five feet high -- although it isn't quite as wide, measuring in at 8 feet. The existing outdoor stair railing is an obstruction to the view that will be removed this year.</p>
+                                <p>This new window will dramatically open views onto the side lot where Aunt Kathleen's cottage used to stand. As some of the "olds" might remember, the Gignac cottage used to be nestled among many fine cedar and birch specimens. In the coming years we hope to design and plant new landscaping in this area with trees to replace the many trees that have fallen in the last 10-15 years.</p>
+                            </div>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#desWestWall">more / less</button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+
+        <!--                 *** End - Cards ***                 -->
+
+    </main>
+
+    <!-- 1. Add a map to the website footer.
+        Google Maps url: https://goo.gl/maps/owYUpAQ24QbDR4hV6 -->
+    <!-- 2. Add a weather widget to to the website footer. WeatherWidget url: https://weatherwidget.io -->
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h4>Contractors and Suppliers Listing</h4>
+                <div class="list-group">
+                    <a href="https://www.kpneuman.com/" class="list-group-item">K.P. Neuman & Sons</a>
+                    <a href="http://www.wernerplumbing.com/services/kitchen-bath.php" class="list-group-item">Werner Plumbing & Heating</a>
+                    <a href="http://mousercabinetry.com/" class="list-group-item">Mouser Cabinetry</a>
+                    <a href="https://www.somersetfloors.com/" class="list-group-item">Somerset Hardwood Flooring</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44628.72729423937!2d-84.50077802348112!3d45.64488810587811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d35a282ad3400cb%3A0xd2f53b42c89f20eb!2sCheboygan%2C%20MI%2049721!5e0!3m2!1sen!2sus!4v1616428537278!5m2!1sen!2sus" class="googleMap" width="400" height="300" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-3">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/45d65n84d47/cheboygan/?unit=us" data-label_1="CHEBOYGAN" data-label_2="WEATHER" data-icons="Climacons" data-mode="Current" data-theme="gray" >CHEBOYGAN WEATHER</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<!-- Loading full version of jquery - minimal file size load increase
+Using Google's library - many viewers will already have this loaded -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<!-- carousel.js must go at end in order to wrap carousel images -->
+<script src="../../js/carousel.js"></script>
+
+<!-- lightbox-plus-jquery.js must also load just before the closing </body> tag -->
+<script src="../../js/lightbox.js"></script>
+
+
+</body>
+
+
+</html>
