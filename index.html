@@ -1,4 +1,4 @@
-<!-- Version 5 added features: 
+<!-- Version 5 added features:
 1. Footer weather app
 2. Footer Google map of Cheboygan
 3. Responsive multi-item carousel
@@ -42,11 +42,20 @@
                     <li class="nav-item">
                         <a href="index.html" class="nav-link active">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="design.html" class="nav-link">Design</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Design</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="design/2020-21/design.html"">2020-21</a>
+                            <a class="dropdown-item" href="design/2021-22/design.html"">2021-22</a>
+                            <!-- <a class="dropdown-item" href="#">Future</a> -->
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a href="progress.html" class="nav-link">Progress</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Progress</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="progress/2020-21/progress.html"">2020-21</a>
+                            <a class="dropdown-item" href="progress/2021-22/progress.html"">2021-22</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="calendar.html" class="nav-link">Calendar</a>
@@ -58,8 +67,8 @@
 
 
     <main class="site-content">
-        <div class="container-fluid below-nav">      
-            <h1>Cheboygan - West US-23</h1>           
+        <div class="container-fluid below-nav">
+            <h1>Cheboygan - West US-23</h1>
         </div>
 
         <!-- *** Multi-item, responsive photo carousel *** -->
@@ -176,7 +185,7 @@
             </div>
             <div class="col-md-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44628.72729423937!2d-84.50077802348112!3d45.64488810587811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d35a282ad3400cb%3A0xd2f53b42c89f20eb!2sCheboygan%2C%20MI%2049721!5e0!3m2!1sen!2sus!4v1616428537278!5m2!1sen!2sus" class="googleMap" width="400" height="300" allowfullscreen="" loading="lazy"></iframe>
-            </div>            
+            </div>
             <div class="col-md-3">
                 <a class="weatherwidget-io" href="https://forecast7.com/en/45d65n84d47/cheboygan/?unit=us" data-label_1="CHEBOYGAN" data-label_2="WEATHER" data-icons="Climacons" data-mode="Current" data-theme="gray" >CHEBOYGAN WEATHER</a>
                 <script>

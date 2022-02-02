@@ -1,0 +1,420 @@
+<!-- Version 6 added features:
+1. Footer weather app
+2. Footer Google map of Cheboygan
+3. Responsive lightbox for "progress" page card images
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arizonia">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/carousel.css">
+    <link rel="stylesheet" href="../../css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+
+    <title>Cheboygan - West US-23</title>
+
+</head>
+
+
+<!-- *** Web page content *** -->
+
+<body class="site">
+
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Casa La Palo Verde</a>
+            <!-- Toggle/collapsible hamburger button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="../../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Design</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../../design/2020-21/design.html">2020-21</a>
+                            <a class="dropdown-item" href="../../design/2021-22/design.html">2021-22</a>
+                            <!-- <a class="dropdown-item" href="#">Future</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Progress</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../../progress/2020-21/progress.html">2020-21</a>
+                            <a class="dropdown-item active" href="#">2021-22</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../calendar.html" class="nav-link">Calendar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="site-content">
+        <div class="container-fluid below-nav">
+            <h1>Cheboygan - West US-23</h1>
+        </div>
+
+
+        <!-- *** Multi-item, responsive photo carousel *** -->
+        <!-- ***               based on:               *** -->
+        <!--     https://codepen.io/timar/pen/mabyEg       -->
+        <!-- _____________________________________________ -->
+
+        <div class="container-fluid">
+            <div id="archives" class="carousel slide" data-ride="carousel" data-interval=7000>
+
+            <!--  ***                 The indicators               *** -->
+            <!-- Future enhancement: responsive coordinated indicators -->
+            <!-- <ul class="carousel-indicators">
+                <li data-target="#archives" data-slide-to="0" class="active"></li>
+                <li data-target="#archives" data-slide-to="1"></li>
+                <li data-target="#archives" data-slide-to="2"></li>
+                <li data-target="#archives" data-slide-to="3"></li>
+                <li data-target="#archives" data-slide-to="4"></li>
+                <li data-target="#archives" data-slide-to="5"></li>
+                <li data-target="#archives" data-slide-to="6"></li>
+                <li data-target="#archives" data-slide-to="7"></li>
+                <li data-target="#archives" data-slide-to="8"></li>
+                <li data-target="#archives" data-slide-to="9"></li>
+                <li data-target="#archives" data-slide-to="10"></li>
+                <li data-target="#archives" data-slide-to="11"></li>
+                <li data-target="#archives" data-slide-to="12"></li>
+            </ul> -->
+
+
+            <!-- The slideshow -->
+
+                <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2 active">
+                        <img class="img-fluid mx-auto d-block" src="../../images/pCarGerryMom.jpeg" alt="Mom and Gerry sitting on sofa">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                        <img class="img-fluid mx-auto d-block" src="../../images/pCarDanLauraDrive.jpeg" alt="Dan and Laura standing in driveway">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                        <img class="img-fluid mx-auto d-block" src="../../images/pCarHBirdFeeder.jpg" alt="Hummingbird at feeder outside window">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                        <img class="img-fluid mx-auto d-block" src="../../images/pCarKidsCouch.jpeg" alt="Madeline, Sarah, and Paul reading on the couch">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                        <img class="img-fluid mx-auto d-block" src="../../images/pCarMarkUS23.jpeg" alt="Mark standing in driveway during snowstorm">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                        <img class="img-fluid mx-auto d-block" src="../../images/pCarPegMomGrad.jpeg" alt="Mom and Peg posing for graduation photo">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                        <img class="img-fluid mx-auto d-block" src="../../images/pCarSnowDoor.jpeg" alt="Snow piled up and around kitchen entrance door">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                        <img class="img-fluid mx-auto d-block" src="../../images/pCarSpinWhl.jpeg" alt="Mary Jo with Chloe and Owen at the spinning wheel">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+                      <img class="img-fluid mx-auto d-block" src="../../images/pCarWoodStove.jpeg" alt="Dan, Tim, Peg and Brandy by living room wood stove">
+                    </div>
+                </div>
+
+                <!-- The left and right controls -->
+                <a class="carousel-control-prev" href="#archives" role="button" data-slide="prev">
+                    <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next text-faded" href="#archives" role="button" data-slide="next">
+                    <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- _____________________________________________ -->
+
+        <!--             *** END - Carousel ***            -->
+
+
+        <!-- New Living Room 2021-2022 Progress Section - created 20 Jan 2022 -->
+        <section class="livingRoom-photos">
+            <div class="container-fluid">
+                <h2>Living Room 2021-2022</h2>
+                <p>The living room addition was built in the early-mid 1970's. The building contractor was Gordon Spies of Cheboygan, MI. The Spies workcrew set a cinder block foundation into the sloping ground in front of the house and erected the gabled living room structure off the current dining room. If you go into the attic, crawl above the living room (being very careful to keep your footing on the ceiling joist 2 x 6's), and look behind you towards US-23, you will see the roof structure of the original house built by Great-great Grandpa Frost and his neighbors, Mr. Hardy and Charlie LeDuc.</p>
+                <p>Gordon Spies laid the foundation, framed the addition, set the windows and door, sided the exterior, and shingled the roof. Grandpa Castle with the help of his wife and children finished the interior. The finishing work included electrical wiring and hook-up; laying insulation in the walls and ceiling; installing the wall paneling; trimming the windows, doors and thresholds; and installing carpet. Grandma Castle decorated the living room and sewed the window drapes.</p>
+                <p>The extra space was welcomed by the family, but the house was still a three-season cottage. A Franklin wood-burning stove was installed in the northeast corner of the living room to supplement the gas space heater in the dining room. The stove took the chill off the house during cool summer nights. It was cozy but not sufficient to keep the house comfortable when the nights went below freezing. Every year in early October, the plumbing pipes were drained and the house was winterized until it could be re-opened in late May the following year.</p>
+                <p>The next addition, in the late 1970's, which added the master bedroom, craft room and back bathroom was built as Grandma and Grandpa Castle planned their retirement move to Cheboygan. Hot water heating was installed by Werner's Plumbing. Insulation foam board was laid over the original house timbers and exterior paneling was attached. Grandpa Castle and his boys rolled out fiberglass insulation between the ceiling joists in the attic - a very hot and itchy job in the summertime. The additional reinforcements enabled Grandma and Grandpa Castle to live in the house year-round when they moved from Detroit to Cheboygan in 1981.</p>
+
+                <div class="card-group">
+                    <div class="card border border-dark">
+                        <a href="../../images/progLRNorthBefore.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room emptied - North wall" data-alt="Living room emptied - before view of North wall">
+                            <img class="card-img-top" src="../../images/progLRNorthBefore.jpg" alt="Living room emptied - before view of North wall" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room interior North wall demolition</h3>
+                            <p id="progLR-1" class="collapse">The living room furniture was moved into the attic and adjacent rooms in early January.</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-1">more / less</button>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <a href="../../images/progLREastBefore.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room emptied - East wall" data-alt="Living room emptied - before view of East wall">
+                            <img class="card-img-top" src="../../images/progLREastBefore.jpg" alt="Living room emptied - before view of East wall" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room interior East wall demolition</h3>
+                            <p id="progLR-2" class="collapse">Window treatments, prints, books and magazines were packed away and are stored in the attic.</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-2">more / less</button>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <a href="../../images/progLRWestBefore.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room emptied - West wall" data-alt="Living room emptied - before view of West wall">
+                            <img class="card-img-top" src="../../images/progLRWestBefore.jpg" alt="Living room emptied - before view of West wall" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room interior West wall demolition</h3>
+                            <div id="progLR-3" class="collapse">
+                                <p>The dining room was also completely emptied of furniture and decorations. The kitchen cabinets and appliances were covered with plastic drop sheets. With the three rooms cleared, the house is ready for Neuman & Sons Construction to begin demolition.</p>
+                            </div>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-3">more / less</button>
+                        </div>
+                    </div>
+                </div> <!-- end of card group #1 - 3 columns best for responsive layout -->
+
+                <div class="card-group">
+                    <div class="card border border-dark">
+                        <a href="../../images/progLRIntNorthWall.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room North wall interior demo" data-alt="Living room demolition on North wall with new composite picture window">
+                            <img class="card-img-top" src="../../images/progLRIntNorthWall.jpg" alt="Living room demolition on North wall with new composite picture window" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room interior North wall demolition</h3>
+                            <p id="progLR-4" class="collapse">This is a photo of the North wall demolition and new window installation. This photo shows the interior paneling and floating ceiling removed. The new composite window is 10 feet wide and five feet tall. Plywood will be nailed to this interior wall as a backing behind the finished drywall. The plywood will stabilize the wall and prevent any slight shifting which would cause cracks in the drywall.</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-4">more / less</button>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <a href="../../images/progLRIntEastWall.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room East wall demolition" data-alt="Living room demolition on East wall with two new casement windows">
+                            <img class="card-img-top" src="../../images/progLRIntEastWall.jpg" alt="Living room demolition on East wall with two new casement windows" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room interior East wall demolition</h3>
+                            <p id="progLR-5" class="collapse">The East wall has been demoed and an opening has been cut out and framed to allow the installation of the additional window in the Northeast corner of the room. The existing slider window has also been replaced with a new and matching casement window.</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-5">more / less</button>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <a href="../../images/progLRIntWestWall.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room West wall demolition" data-alt="Living room demolition on West wall with new composite picture window">
+                            <img class="card-img-top" src="../../images/progLRIntWestWall.jpg" alt="Living room demolition on West wall with new composite picture window" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room interior West wall demolition</h3>
+                            <div id="progLR-6" class="collapse">
+                                <p>The West wall door will remain in place for a while as workers move tools and materials in and out of the living room and finish the renovations. The new composite window can be seen. The window wood facing and trim will be removed and stained off site. As can be seen with the other interior photos, the living room views look very different now.</p>
+                            </div>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-6">more / less</button>
+                        </div>
+                    </div>
+                </div> <!-- end of card group #2 - 3 columns best for responsive layout -->
+
+                <div class="card-group">
+                    <div class="card border border-dark">
+                        <a href="../../images/progLRNorthReframed.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room interior North wall re-framed" data-alt="Living room North wall re-framed with new composite picture window">
+                            <img class="card-img-top" src="../../images/progLRNorthReframed.jpg" alt="Living room demolition on North wall with new composite picture window" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room interior North wall re-framed</h3>
+                            <p id="progLR-7" class="collapse">In this and the next two photos, demolition and the first week of construction has been completed.</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-7">more / less</button>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <a href="../../images/progLREastReframed.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room interior East wall re-framed" data-alt="Living room East wall reframed with two new casement windows">
+                            <img class="card-img-top" src="../../images/progLREastReframed.jpg" alt="Living room East wall reframed with two new casement windows" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room East window sunlight</h3>
+                            <p id="progLR-8" class="collapse">The East wall has been reframed with one replacement and one new, matching window. This photo previews how the new window, even partially covered here by the plywood sheet, will provide the living room with additional morning sunlight.</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-8">more / less</button>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <a href="../../images/progLRWestReframed.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room interior West wall re-framed" data-alt="Living room demolition West wall with new composite picture window">
+                            <img class="card-img-top" src="../../images/progLRWestReframed.jpg" alt="Living room demolition West wall with new composite picture window" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room interior West wall re-framed</h3>
+                            <div id="progLR-9" class="collapse">
+                                <p>The West wall has been reframed to fit the new composite picture window and also to remove the exterior access door. The new views and airflow in this room will be very different and, hopefully, an upgrade to the previous layout.</p>
+                            </div>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-9">more / less</button>
+                        </div>
+                    </div>
+                </div> <!-- end of card group #3 - 3 columns best for responsive layout -->
+
+                <div class="card-group">
+                    <div class="card border border-dark">
+                        <a href="../../images/progLRExtNorthWall.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room North wall exterior windows" data-alt="Living room North wall exterior view of new composite picture window">
+                            <img class="card-img-top" src="../../images/progLRExtNorthWall.jpg" alt="Living room North wall exterior view of new composite picture window" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room exterior North wall demolition</h3>
+                            <div id="progLR-10" class="collapse">
+                                <p>This is an exterior photo of the front (North) face of the house with the new, composite picture window installed. Scaffolding has been erected to allow the workers to install the window and access the house siding.</p>
+                            </div>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-10">more / less</button>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <a href="../../images/progLRExtEastWall.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room East wall exterior windows" data-alt="Living room East wall exterior view of two new casement windows">
+                            <img class="card-img-top" src="../../images/progLRExtEastWall.jpg" alt="Living room East wall exterior view of two new casement windows" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room exterior East wall demolition</h3>
+                            <p id="progLR-11" class="collapse">The siding was removed from the living room addition so that the new window configurations could be cut out, fortified, and framed. The work shown in these photos was accomplished in two and a half days, and there is still plenty of work going on.</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-11">more / less</button>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <a href="../../images/progLRExtWestWall.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room East wall exterior windows" data-alt="Living room West wall exterior view of new composite picture window">
+                            <img class="card-img-top" src="../../images/progLRExtWestWall.jpg" alt="Living room West wall exterior view of new composite picture window" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room exterior West wall demolition</h3>
+                            <p id="progLR-12" class="collapse">The stair rail will be removed so that the West wall window view is not obstructed. Exterior plans are being developed now with construction likely occurring in 2022-2023. A deck area on the west side of the living room is presently being considered.</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-12">more / less</button>
+                        </div>
+                    </div>
+                </div> <!-- end of card group #4 - 3 columns best for responsive layout -->
+
+
+                <div class="card-group">
+                    <div class="card border border-dark">
+                        <a href="../../images/progLRZipTarp.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room zippered tarp" data-alt="Living room zippered tarp to minimize dust penetration through house">
+                            <img class="card-img-top" src="../../images/progLRZipTarp.jpg" alt="Living room zippered tarp to minimize dust penetration through house" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room dust protection</h3>
+                            <div id="progLR-13" class="collapse">
+                                <p>A zippered plastic tarp has been temporarily placed between the living room and dining room to isolate and minimize the spread of demolition and drywall dust air particles throughout the house.</p>
+                            </div>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-13">more / less</button>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <a href="../../images/ProgLRNrthSiding.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room North exterior siding" data-alt="Exterior view of re-used siding on North wall">
+                            <img class="card-img-top" src="../../images/ProgLRNrthSiding.jpg" alt="Exterior view of re-used siding on North wall" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room exterior North wall siding</h3>
+                            <p id="progLR-14" class="collapse">The siding has been replaced on the exterior North face of the house.</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-14">more / less</button>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <a href="../../images/ProgLROffshore.jpg" data-lightbox="progLivingRoom-lbox" data-title="Winter view of house from offshore" data-alt="Winter view of the North face of the house from offshore">
+                            <img class="card-img-top" src="../../images/ProgLROffshore.jpg" alt="Winter view of the North face of the house from offshore" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>View of the North face of the house from frozen Lake Huron offshore</h3>
+                            <p id="progLR-15" class="collapse">The house can be seen cozily nestled in the trees and snow in this photo taken in January from offshore.</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-15">more / less</button>
+                        </div>
+                    </div>
+                </div> <!-- end of card group #5 - 3 columns best for responsive layout -->
+
+                <div class="card-group">
+                    <div class="card border border-dark">
+                        <a href="../../images/progLREastSiding.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room East exterior siding" data-alt="Exterior view of re-used siding on East wall">
+                            <img class="card-img-top" src="../../images/progLREastSiding.jpg" alt="Exterior view of re-used siding on East wall" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room exterior East wall siding</h3>
+                            <div id="progLR-16" class="collapse">
+                                <p>The exterior faces of the house have been covered with re-used and new siding. Over time the newer siding will fade to match the re-used siding.</p>
+                            </div>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-16">more / less</button>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <a href="../../images/progLRWestSiding.jpg" data-lightbox="progLivingRoom-lbox" data-title="Living room West exterior siding" data-alt="Exterior view of covered door and siding on West wall">
+                            <img class="card-img-top" src="../../images/progLRWestSiding.jpg" alt="Exterior view of covered door and siding on West wall" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Living room exterior West wall siding and covered door</h3>
+                            <p id="progLR-17" class="collapse">The exterior living room door on the West face of the house has been covered. A raceway cable path has been installed in the wall frame, and the bulkhead pictured here will be removed.</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-17">more / less</button>
+                        </div>
+                    </div>
+                    <div class="card border border-dark">
+                        <a href="../../images/progLREastFoamInsul.jpg" data-lightbox="progLivingRoom-lbox" data-title="Insulated East living room wall" data-alt="Foam insulation sprayed into East living room wall frame">
+                            <img class="card-img-top" src="../../images/progLREastFoamInsul.jpg" alt="oam insulation sprayed into East living room wall frame" data-lightbox="progLivingRoom-lbox">
+                        </a>
+                        <div class="card-body">
+                            <h3>Foam insulation in living room framewalls</h3>
+                            <p id="progLR-18" class="collapse">The batt roll insulation has been removed and in its place foam insulation has been sprayed into the living room wall frame. This was also applied in the kitchen walls when that room was renovated last year. The foam insulation has a higher R value and offers more protection from cold drafts. Electrical and coax gang boxes can be seen under and between the East wall windows.</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#progLR-18">more / less</button>
+                        </div>
+                    </div>
+                </div> <!-- end of card group #6 - 3 columns best for responsive layout -->
+
+            </div> <!-- end of "livingRoom-photos" section container -->
+        </section> <!-- end of "livingRoom-photos" section -->
+
+    </main>
+
+    <!-- 1. Add a map to the website footer.
+        Google Maps url: https://goo.gl/maps/owYUpAQ24QbDR4hV6 -->
+    <!-- 2. Add a weather widget to to the website footer. WeatherWidget url: https://weatherwidget.io -->
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h4>Contractors and Suppliers Listing</h4>
+                <div class="list-group">
+                    <a href="https://www.kpneuman.com/" class="list-group-item">K.P. Neuman & Sons</a>
+                    <a href="http://www.wernerplumbing.com/services/kitchen-bath.php" class="list-group-item">Werner Plumbing & Heating</a>
+                    <a href="http://mousercabinetry.com/" class="list-group-item">Mouser Cabinetry</a>
+                    <a href="https://www.somersetfloors.com/" class="list-group-item">Somerset Hardwood Flooring</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44628.72729423937!2d-84.50077802348112!3d45.64488810587811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d35a282ad3400cb%3A0xd2f53b42c89f20eb!2sCheboygan%2C%20MI%2049721!5e0!3m2!1sen!2sus!4v1616428537278!5m2!1sen!2sus" class="googleMap" width="400" height="300" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-3">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/45d65n84d47/cheboygan/?unit=us" data-label_1="CHEBOYGAN" data-label_2="WEATHER" data-icons="Climacons" data-mode="Current" data-theme="gray" >CHEBOYGAN WEATHER</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<!-- Loading full version of jquery - minimal file size load increase
+Using Google's library - many viewers will already have this loaded -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<!-- carousel.js must go at end in order to wrap carousel images -->
+<script src="../../js/carousel.js"></script>
+
+<!-- lightbox-plus-jquery.js must also load just before the closing </body> tag -->
+<script src="../../js/lightbox.js"></script>
+
+
+</body>
+
+
+</html>
